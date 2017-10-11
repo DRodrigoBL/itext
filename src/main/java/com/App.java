@@ -86,7 +86,11 @@ public class App
         	
         	document.add(myTable);
 
+        	document.newPage();
         	
+        	Paragraph paragraph = new Paragraph("Reporte de evaluacion del Sistema Operativo", FontFactory.getFont(FontFactory.TIMES_ROMAN, 24,Font.BOLD, new BaseColor(25,118,210) ));
+        	paragraph.setAlignment(Element.ALIGN_CENTER);
+        	document.add(paragraph);
         	
         	document.close();
         	
