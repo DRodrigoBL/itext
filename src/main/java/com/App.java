@@ -87,10 +87,14 @@ public class App
         	document.add(myTable);
 
         	document.newPage();
-        	
+        	//PORTADA
         	Paragraph paragraph = new Paragraph("Reporte de evaluacion del Sistema Operativo", FontFactory.getFont(FontFactory.TIMES_ROMAN, 24,Font.BOLD, new BaseColor(25,118,210) ));
         	paragraph.setAlignment(Element.ALIGN_CENTER);
         	document.add(paragraph);
+        	
+        	Image sistemaLogo  = Image.getInstance("/home/karla/Documents/rfiles/itext/src/main/resources/centos_logo.png");
+        	sistemaLogo.scalePercent(20);
+        	
         	
         	document.close();
         	
